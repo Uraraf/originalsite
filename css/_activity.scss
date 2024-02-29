@@ -1,0 +1,152 @@
+#page-activity {
+    padding-block: 60px;
+    text-align: center;
+    @media screen and (max-width: 960px) {
+        padding-block: 40px;
+    }
+}
+.activity-inner {
+    padding-top: 50px;
+    @media screen and (max-width: 960px) {
+        padding-top: 30px;
+    }
+    .activity-item {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        @media screen and (max-width: 960px) {
+            flex-direction: column-reverse;
+            margin-bottom: 30px;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &.reverse {
+            flex-direction: row-reverse;
+            @media screen and (max-width: 960px) {
+                flex-direction: column-reverse;
+            }
+            .text-block {
+                margin-left: 0;
+                margin-right: 40px;
+                @media screen and (max-width: 960px) {
+                    margin: 0 auto
+                }
+            }
+        }
+        img {
+            width: 27%;
+            height: 335px;
+            object-fit: cover;
+            @media screen and (max-width: 960px) {
+                width: 80%;
+                height: 230px;
+                margin: 0 auto;
+            }
+        }
+        .text-block {
+            width: 50%;
+            margin-left: 40px;
+            text-align: left;
+            @media screen and (max-width: 960px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+            p.activity-name {
+                display: inline-block;
+                background-color: #579BB1;
+                color: #fff;
+                padding: 8px 16px;
+                margin-bottom: 20px;
+                @media screen and (max-width: 960px) {
+                    padding: 6px 8px;
+                    margin-bottom: 15px;
+                }
+            }
+            p.activity-text {
+                margin-bottom: 50px;
+                padding-left: 16px;
+                @media screen and (max-width: 960px) {
+                    margin-bottom: 15px;
+                    padding-left: 0;
+                }
+            }
+            dl.activity-detail {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                dt {
+                    width: 40%;
+                    padding-block: 15px;
+                    padding-left: 16px;
+                    border-top: solid 1px #ECE8DD;
+                    @media screen and (max-width: 960px) {
+                        width: 30%;
+                        padding-block: 10px;
+                        padding-left: 12px;
+                    }
+                    &:last-of-type {
+                        border-bottom: solid 1px #ECE8DD;
+                    }
+                }
+                dd {
+                    width: 60%;
+                    padding-block: 15px;
+                    border-top: solid 1px #ECE8DD;
+                    @media screen and (max-width: 960px) {
+                        padding-block: 10px;
+                        width: 70%;
+                    }
+                    &:last-of-type {
+                        border-bottom: solid 1px #ECE8DD;
+                    }
+                }
+            }
+            p.activity-sup {
+                font-size: 0.75rem;
+                margin-top: 15px;
+                padding-left: 16px;
+                @media screen and (max-width: 960px) {
+                    font-size: 0.5rem;
+                    margin-block: 10px;
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+}
+
+#activity-warning {
+    background-color: #ECE8DD;
+    padding-block: 40px;
+    @media screen and (max-width: 960px) {
+        padding-block: 25px;
+    }
+    .warning-inner {
+        width: 70%;
+        background-color: #fff;
+        padding-block: 30px;
+        margin: 0 auto;
+        text-align: center;
+        @media screen and (max-width: 960px) {
+            width: 88%;
+            padding-block: 20px;
+        }
+        ul.warning-ul {
+            display: inline-block;
+            text-align: left;
+            margin-top: 30px;
+            padding-inline: 6%;
+            @media screen and (max-width: 960px) {
+                margin-top: 20px;
+            }
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+                text-indent: -1.4em;
+                padding-left: 1.4em;
+            }
+        }
+    }
+}
